@@ -4,11 +4,14 @@
     $password="password";
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true) {
         header("location:loginsucess.php");
+        exit();
     }
     
     if(isset($_POST['username']) && isset($_POST['password'])) {
-        if($_POST['username'] == $username && $_POST['password']==$password) {
+        if($_POST['username']==$username && $_POST['password']==$password) {
             $_SESSION['loggedin']=true;
+            header("Location: loginsucess.php");
+            exit();
         }
         else {
             echo "Username or password is incorrect.";
