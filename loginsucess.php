@@ -1,5 +1,4 @@
 <!-- loginsucess.php -->
-<!DOCTYPE HTML>
 <?php
     session_start();
     if(!isset($_SESSION['loggedin']) | $_SESSION['loggedin']==false){
@@ -8,6 +7,7 @@
 
 ?>
 
+<!DOCTYPE HTML>
 <html>
 <body>
 <h3> You have logged in successfully!</h3>
