@@ -9,5 +9,11 @@
 <html>
 <body>
 <h3> You have logged in successfully!</h3>
+    
+<!-- Logout Button -->
+<form action="logout.php" method="post">
+    <input type="submit" value="Logout">
+</form>
+    
 </body>
 </html>
