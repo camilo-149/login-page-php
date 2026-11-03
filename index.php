@@ -1,7 +1,7 @@
 <?php  
     session_start();
-    $username="user";
-    $password="password";
+    $username="professor_charles";
+    $password="mutant-cerebro-97";
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true) {
         header("location:loginsucess.php");
         exit();
